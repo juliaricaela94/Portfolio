@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.navbar {
+    text-align: center;
+    background: #2f3640; 
+    padding: 15px;
+}
+
+.navbar a {
+    color: #dcdde1; 
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #4b6584; 
+    border-radius: 5px;
+}
+
+#main-content {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-column,
+.right-column {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #4b6584; 
+}
+
+.profile-name {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.job-title {
+    text-align: center;
+    color: #636e72; 
+    font-style: italic;
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding: 15px;
+    background: #dfe6e9; 
+    border-radius: 8px;
+}
+
+.skills-section li {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.about-section p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #b2bec3;
+    border-radius: 5px;
+}
+
+.message-form input[type="submit"] {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: #4b6584; 
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.message-form input[type="submit"]:hover {
+    background: #3c4f63;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background: #2f3640;
+    color: white;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background: #1a1a1a;
+}
+
+.dark-mode .left-column,
+.dark-mode .right-column {
+    background: #1f1f1f;
+    color: white;
+}
+
+.dark-mode a {
+    color: #b3b3ff;
+}
